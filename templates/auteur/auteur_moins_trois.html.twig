@@ -1,0 +1,21 @@
+{% extends 'base.html.twig'%}
+
+{% block simple %}Auteur_Livre{% endblock%}
+
+{% block body %}
+
+
+<h1 class="w3-teal"> La liste des acteurs qui ecrit au moins trois livres </h1>
+<ul class="w3-ul w3-border">
+
+{% for auteur in auteurs %}
+
+<li>{{ auteur.nom_prenom}} </li>
+<li> </li>
+
+{% endfor %}
+
+
+<ul>
+
+{% endblock%}
